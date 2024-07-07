@@ -1,1 +1,36 @@
-/* место для вашего кода */
+
+.header {
+    display: flex;
+    margin: auto;
+    width: 1052px;
+    height: 105px;
+    padding: 92px 24px 2831px;
+}
+.content-section {
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.cover {
+    width: 1100px; 
+    height: 757px;   
+    padding: 293px 1978px;
+}
+
+.lots {
+    width: 1052px;
+    height: 692px;
+    padding: 1229px 24px 1107px;
+}
+
+.about {
+    width: 1052px;
+    height: 595px;
+    padding: 2067px 24px 366px;
+}
+
+.footer {
+    width: 1000px;
+    height: 98px;
+    padding: 2842px 50px 88px;
+}
