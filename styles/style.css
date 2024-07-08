@@ -1,14 +1,28 @@
+.content-section {
+    box-sizing: border-box;
+    margin: auto;
+}
 
 .header {
     display: flex;
     margin: auto;
+    justify-content: space-between;
+    align-items: flex-start;
     width: 1052px;
     height: 105px;
     padding: 92px 24px 2831px;
 }
-.content-section {
-    box-sizing: border-box;
-    margin: auto;
+
+.header__links-list {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: circle;
+    
+}
+
+.header__logo {
+    width: 148px;
+    height: 105px;
 }
 
 .cover {
