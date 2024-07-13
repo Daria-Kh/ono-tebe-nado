@@ -69,10 +69,12 @@
 }
 
 .overlay {
-    height: 100%;
-    width: 100%;
-    background-color: rgba(184, 175, 197, 0.5);
     position: absolute;
+    background-color: #fff;
+    opacity: 1;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
 }
 
 .cover {
@@ -83,8 +85,6 @@
     color: white;
     margin: 96px 0px 179px 0px;
     position: static;
-   
-    
 }
 
 .cover__title {
@@ -96,7 +96,6 @@
     font-weight: 700;
     text-transform: uppercase;
     padding: 165px 50px 147px;
-    
 }
 
 .aligin-text {
@@ -136,7 +135,6 @@
     display: flex;
     justify-content: space-between;
     height: 51px;
-   
 }
 
 .cover__description-text {
@@ -145,7 +143,6 @@
     word-spacing: 18.4px;
     text-transform: uppercase;
     margin-left: 78px;
-    
 }
 
 .bet-button {
@@ -161,7 +158,6 @@
     margin-right: 50px;
     position: relative;
     bottom: 11px;
-    
 }
 
 .lots {
@@ -178,48 +174,84 @@
     text-transform: uppercase;
 }
 
-
 .lots__card-list {
+    display: grid;
+    grid-template-columns: repeat(3, 334px);
+    grid-template-rows: repeat(1, 563px);
+    column-gap: 25px;
     list-style: none;
     height: 100%;
     width: 100%;
 }
 
 .lots__card-list-item {
-    padding-top: 51px;
-    padding-left: 40px;
-    font-weight: 700;
-    font-size: 22px;
-    text-transform: uppercase;
-    color: white;
+    
 }
 
 .card {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-row: 1;
-    column-gap: 25px;
+    
+}
 
+.card__title {
+    font-weight: 700;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: white;
+    padding: 52px 40px 0px;
+}
+
+.card__text {
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    line-height: 24px;
+}
+
+.card__text-film {
+    padding: 242px 40px 48px;
+}
+
+.card__text-book {
+    padding: 0px 40px 48px;
+}
+
+.card__text-picture {
+    padding: 96px 40px 48px;
 }
 
 .card_type_film {
-    height: 100%;
     background-image: url(../images/card-lot-01.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100%;
 }
 
 .card_type_book {
-    height: 100%;
     background-image: url(../images/card-lot-02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
 }
 
 .card_type_picture {
-    height: 100%;
     background-image: url(../images/card-lot-03.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
 }
+
+.lots__look-more-link {
+    display: flex;
+    justify-content: start;
+    padding-top: 595px;
+    padding-left: 40px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+}
+
 
 .about {
     width: 1052px;
